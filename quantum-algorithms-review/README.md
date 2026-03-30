@@ -1,3 +1,4 @@
+```
 quantum-algorithms-review/
 ├─ README.md
 ├─ AGENTS.md
@@ -52,3 +53,4 @@ quantum-algorithms-review/
    ├─ highlights.md
    ├─ graphical_abstract_notes.md
    └─ final_checklist.md
+```
