@@ -1,4 +1,4 @@
-# DOE Genesis Mission Phase I Proposal
+# DOE Genesis Mission Phase I Proposal Version 2
 ## DE-FOA-0003612 | Topic 7 – Discovering Quantum Algorithms with AI
 ### Focus Area C – Hybrid Quantum-Classical Optimization Algorithms (BES)
 
