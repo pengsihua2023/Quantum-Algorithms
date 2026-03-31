@@ -1,4 +1,4 @@
-# DOE Genesis Mission Phase I Proposal Version 2
+# DOE Genesis Mission Phase I Proposal
 ## DE-FOA-0003612 | Topic 7 – Discovering Quantum Algorithms with AI
 ### Focus Area C – Hybrid Quantum-Classical Optimization Algorithms (BES)
 
@@ -91,7 +91,11 @@ This bounded scope is appropriate for Phase I feasibility: it enables rigorous c
 
 #### 3.2 Workflow Architecture
 
-The proposed workflow integrates four tightly coupled layers (Figure 1 — *to be provided in submitted version*):
+The proposed workflow integrates four tightly coupled layers, as illustrated in Figure 1:
+
+![Figure 1. Overview of the proposed agentic AI-guided hybrid quantum-classical workflow.](../../images/figure%201.png)
+
+**Figure 1.** Project workflow overview. The diagram shows the four tightly coupled layers (candidate ingestion and representation, agentic planning and routing, computational back-end with classical and hybrid Q-C paths, and surrogate active-learning loop), the 9-month work package timeline (WP1–WP5), Phase I deliverables, ablation comparison structure (B0–B3), and the multi-institutional team arrangement.
 
 **(a) Candidate Ingestion and Representation.**
 Materials candidates are encoded using a combination of compositional descriptors, structural fingerprints (e.g., smooth overlap of atomic positions, crystal graph representations), surface-context features encoding termination and adsorbate configuration, and any partially observed property vectors accumulated during prior campaign iterations. Objective and constraint specifications are encoded at campaign initialization and updated as the workflow evolves.
