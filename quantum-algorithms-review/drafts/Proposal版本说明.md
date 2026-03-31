@@ -1,3 +1,3 @@
 - full_proposal_draft_v1.md: Version 1
 - full_proposal_draft_CH_v1.md：Version 1 中文版
-- full_proposal_draft_v2.md：Version 2， 增加了参考文献
+- full_proposal_draft_v2.md：Version 2， 增加了参考文献，增加了figure 1.
