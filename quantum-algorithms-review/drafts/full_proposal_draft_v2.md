@@ -91,7 +91,8 @@ This bounded scope is appropriate for Phase I feasibility: it enables rigorous c
 
 #### 3.2 Workflow Architecture
 
-The proposed workflow integrates four tightly coupled layers, as illustrated in Figure 1:
+The proposed workflow integrates four tightly coupled layers, as illustrated in Figure 1:  
+
 <img width="939" height="512" alt="image" src="https://github.com/user-attachments/assets/2e91210e-9a2e-4750-a539-55e2661c75ac" />
 
 
