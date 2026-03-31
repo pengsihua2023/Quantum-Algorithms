@@ -304,6 +304,4 @@ The final output should read like a serious review article:
 * balanced in judgment
 * useful to researchers and advanced students
 
-```
-
 
