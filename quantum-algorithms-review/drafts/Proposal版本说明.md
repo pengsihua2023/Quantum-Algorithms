@@ -1,2 +1,2 @@
 - full_proposal_draft_v1.md: Version 1
-- 
+- full_proposal_draft_CH_v1.md Version 1 中文版
