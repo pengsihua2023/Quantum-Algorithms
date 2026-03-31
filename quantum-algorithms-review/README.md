@@ -1,4 +1,4 @@
-````md id="812k3"
+
 # Quantum Algorithms Review Project
 
 A Claude Code project for drafting a review article on **research progress in quantum algorithms**.
