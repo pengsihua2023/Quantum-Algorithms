@@ -93,7 +93,7 @@ This bounded scope is appropriate for Phase I feasibility: it enables rigorous c
 
 The proposed workflow integrates four tightly coupled layers, as illustrated in Figure 1:
 
-![Figure 1. Overview of the proposed agentic AI-guided hybrid quantum-classical workflow.](../../images/figure%201.png)
+<img width="939" height="512" alt="image" src="https://github.com/user-attachments/assets/2e91210e-9a2e-4750-a539-55e2661c75ac" />
 
 **Figure 1.** Project workflow overview. The diagram shows the four tightly coupled layers (candidate ingestion and representation, agentic planning and routing, computational back-end with classical and hybrid Q-C paths, and surrogate active-learning loop), the 9-month work package timeline (WP1–WP5), Phase I deliverables, ablation comparison structure (B0–B3), and the multi-institutional team arrangement.
 
