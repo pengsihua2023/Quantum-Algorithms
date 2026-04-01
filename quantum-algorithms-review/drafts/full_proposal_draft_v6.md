@@ -127,6 +127,13 @@ The back-end integrates three execution paths:
 
 Distributed execution will be supported via a job scheduler abstraction layer enabling deployment across local clusters, national HPC systems (e.g., NERSC, ALCF), and cloud resources, consistent with the Topic 7C requirement for cross-platform execution.
 
+**(d) Surrogate and Active-Learning Loop.**
+Surrogate models are trained on the accumulated outputs of prior campaign iterations and are used to predict target properties and composite scoring functions for unvisited candidates. Uncertainty quantification (Bayesian neural networks, deep ensembles, or Gaussian-process-based local surrogates) drives acquisition functions for next-round selection, balancing exploitation of predicted high-value regions with exploration of uncertain areas of candidate space. Surrogates are retrained at campaign checkpoints determined by the agentic planner based on evidence accumulation criteria.
+
+#### 3.3 Why This Is Beyond Iterative Parameter Search
+
+Topic 7C explicitly calls for workflows **beyond iterative parameter-space searches**. The proposed work satisfies this requirement at three levels. First, the object being optimized is the **campaign policy**—the mapping from campaign state to next action—rather than the parameters of a single variational circuit. Second, the workflow manages heterogeneous computation across qualitatively different solver types, not a single parameterized solver. Third, the surrogate models learn **representations of the scientific landscape** (property surfaces, uncertainty maps) rather than representations of a single optimization objective in a fixed parameter space.
+
 #### 3.4 Simulation-to-Hardware Migration Protocol for Quantum Components
 
 A credible Phase I plan for hybrid quantum-classical computation must provide a concrete pathway from classical simulation of quantum circuits to validated execution on real quantum processors. We adopt a four-stage migration protocol aligned with the 9-month project timeline (Table 1), designed to ensure that quantum hardware runs are only attempted once circuit designs have been validated and resource requirements are well characterized.
@@ -151,13 +158,6 @@ The validated circuit designs and error mitigation protocols are executed on rea
 
 **Stage 4 — Application-Relevant Hardware Benchmarking (Months 7–9).**
 With the end-to-end pipeline validated on small molecules, Stage 4 applies the hardware-execution pathway to reduced active-space subproblems derived from the Phase I electrode-material candidate set—specifically, transition-metal *d*-band correlated states (e.g., Ti or Ru active spaces of 8–16 electrons in 8–16 orbitals, requiring 8–20 qubits after active-space reduction via AVAS or DMET embedding). Results from quantum hardware runs are compared against *(i)* Stage 1 noise-free simulation, *(ii)* CASSCF/DMRG classical references, and *(iii)* the B1 static hybrid baseline. This comparison produces the quantitative evidence base for whether selectively deployed quantum routines, as directed by the agentic workflow, yield scientifically meaningful improvements over the classical-only path for this application class. All Stage 4 results—including cases where quantum hardware does not outperform classical solvers—will be reported transparently as part of the Phase I benchmark deliverable.
-
-**(d) Surrogate and Active-Learning Loop.**
-Surrogate models are trained on the accumulated outputs of prior campaign iterations and are used to predict target properties and composite scoring functions for unvisited candidates. Uncertainty quantification (Bayesian neural networks, deep ensembles, or Gaussian-process-based local surrogates) drives acquisition functions for next-round selection, balancing exploitation of predicted high-value regions with exploration of uncertain areas of candidate space. Surrogates are retrained at campaign checkpoints determined by the agentic planner based on evidence accumulation criteria.
-
-#### 3.3 Why This Is Beyond Iterative Parameter Search
-
-Topic 7C explicitly calls for workflows **beyond iterative parameter-space searches**. The proposed work satisfies this requirement at three levels. First, the object being optimized is the **campaign policy**—the mapping from campaign state to next action—rather than the parameters of a single variational circuit. Second, the workflow manages heterogeneous computation across qualitatively different solver types, not a single parameterized solver. Third, the surrogate models learn **representations of the scientific landscape** (property surfaces, uncertainty maps) rather than representations of a single optimization objective in a fixed parameter space.
 
 ---
 
