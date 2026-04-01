@@ -7,3 +7,4 @@ The agentic orchestration layer will be implemented using **LangGraph** as the s
 - **full_proposal_draft_v5.md**: Version 5，在5.3增加HPC + 量子计算资源详细说明及集成架构。
 - **v1_full_draft.md**: 量子算法综述。
 - **v1_full_draft_CH.md**：量子算法综述中文版
+- **full_proposal_draft_v6.md**: Version 6,增加了 section 3.4 
